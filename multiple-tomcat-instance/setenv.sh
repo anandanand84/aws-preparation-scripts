@@ -78,7 +78,7 @@ export CATALINA_OPTS="$CATALINA_OPTS -server"
 # and remove ability for applications to call explicit GC collection
 export CATALINA_OPTS="$CATALINA_OPTS -XX:+DisableExplicitGC"
 
-export JAVA_OPTS="$JAVA_OPTS -DPUBLIC_IP=$PUBLIC_IP"
+export JAVA_OPTS="$JAVA_OPTS -Dpublicip=$publicip"
 
 # Check for application specific parameters at startup
 if [ -r "$CATALINA_BASE/bin/appenv.sh" ]; then
