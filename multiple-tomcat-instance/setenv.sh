@@ -30,6 +30,7 @@
 # github @ https://github.com/terrancesnyder
 
 # ==================================================================
+export publicip=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'  )
 
 # discourage address map swapping by setting Xms and Xmx to the same value
 # http://confluence.atlassian.com/display/DOC/Garbage+Collector+Performance+Issues
